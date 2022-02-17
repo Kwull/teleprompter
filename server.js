@@ -13,9 +13,9 @@ app.use(cors({ origin: '*' }));
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 app.use('/', express.static(__dirname));
 
-//app.get('/', function(req, res) {
-//  res.sendFile(__dirname + '/remote.html');
-//});
+app.get('/remote', function(req, res) {
+  res.sendFile(__dirname + '/remote.html');
+});
 
 io.on('connection', function(socket) {
   socket.on('connectToRemote', function(id) {
@@ -36,4 +36,4 @@ io.on('connection', function(socket) {
   });
 });
 
-http.listen(3000, function() {});
+http.listen(80, function() {});

@@ -1,5 +1,5 @@
 User-agent: *
 
-Sitemap: http://http://promptr.tv/sitemap.xml
+Sitemap: http://http://prompter.kwull.com/sitemap.xml
 
 Disallow: /remote
