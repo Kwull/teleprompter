@@ -10,4 +10,4 @@ services:
     image: ghcr.io/kwull/teleprompter
     command: client
     ports:
-      - '8080:8080'
+      - '80:80'
