@@ -44,5 +44,5 @@ jobs:
         uses: joelwmale/webhook-action@2.1.0
         with:
           # The url to send the webhook event to
-          url: https://$prompter:sEFFiDig1hdLGJd1hxAb9AW7F6d5FdA0gn2nAn7qL6TiYrcp5dbbkNFR2GHj@prompter.scm.azurewebsites.net/docker/hook
+          url: https://$prompter:${{ secrets.AZURE_WEB_HOOK }}@prompter.scm.azurewebsites.net/docker/hook
           
