@@ -1022,7 +1022,7 @@ var TelePrompter = (function() {
 
       var url = (window.location.hostname === 'promptr.tv') ?
         'https://promptr.tv/remote?id=' + remote :
-        'http://' + window.location.hostname + '/remote/?id=' + remote;
+        'http://' + window.location.hostname + '/remote.html?id=' + remote;
 
       new QRCode($code, url);
       $elm.remoteID.text(remote);
