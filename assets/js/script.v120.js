@@ -137,7 +137,7 @@ var TelePrompter = (function() {
     initSettings();
     initUI();
     initRemote();
-    checkForUpdate();
+    //checkForUpdate();
 
     // Track that we've started TelePrompter
     initialized = true;
